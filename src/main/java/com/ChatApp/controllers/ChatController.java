@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 @CrossOrigin("https://chat-without-limits.vercel.app/")
-//@CrossOrigin("https://chat-without-limits.vercel.app/")
+//@CrossOrigin(AppConstants.frontend_base_url)
 public class ChatController {
     private RoomServices roomServices;
     public ChatController(RoomServices roomServices) {
